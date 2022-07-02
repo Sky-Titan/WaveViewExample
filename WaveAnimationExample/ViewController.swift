@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBAction func startWave(_ sender: Any) {
         waveView.startWave()
     }
+    @IBAction func stopWave(_ sender: Any) {
+    }
     
     @IBAction func colorChange(_ sender: Any) {
         let colors: [UIColor] = [.red, .green, .blue, .black, .purple, .orange, .yellow, .systemPink]

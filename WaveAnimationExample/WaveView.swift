@@ -55,6 +55,10 @@ class WaveView: UIView {
     func startWave() {
         waveLayer?.startWave()
     }
+    
+    func stopWave() {
+        waveLayer?.stopWave()
+    }
 }
 
 
@@ -102,6 +106,10 @@ class WaveLayer: CALayer {
         animation.beginTime = CACurrentMediaTime()
         
         outerLayer?.add(animation, forKey: "wave")
+    }
+    
+    fileprivate func stopWave() {
+        outerLayer?.removeAllAnimations()
     }
 }
 extension CALayer {
